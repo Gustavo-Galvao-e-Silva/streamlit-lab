@@ -103,10 +103,9 @@ project_data = ProjectData(
     start_date= "Feb. 2025",
     end_date= "Apr. 2025",
     description_points= [
-        "-Built a Next.js + Firebase web app for GDSC’s hackathon, implementing authentication, file management, and database communication on a secure backend",
-        "-Led the development of and admin dashboard to manage participant check-in and ID generation, allocate meals, and automate Discord announcements, reducing operational overhead",
-        "-Optimized backend performance, reducing API response times by 80% and database calls by 90% through Firestore transactions and query improvements",
-        "-Designed scalable backend architecture, that sustained over 50k requests per hour during peak usage with no added latency or downtime"
+        "-Website for my old club's (GDSC) hackathon. Some of its capabilities include the application page, participant profile, participant management, and event admin dashboard",
+        "-I mainly worked on developing the admin dashboard. It manages participant check-in and ID generation, allocated meals, and automated Discord announcements. These functionalities **reduced operational overhead by almost 10-fold**",
+        "-Also helped with the backend, cutting the API call times by **almost 80% and database reads by almost 10-fold**"
     ],
     image_path="Images/hackusf.jpg",
     links= {

@@ -1,4 +1,5 @@
-from pandas import DataFrame
+import pandas as pd
+import streamlit as st
 
 
 class PersonalData:
@@ -19,6 +20,12 @@ class EducationData:
         self.end_date = end_date
         self.gpa = gpa
 
+    def display_education_content(self):
+        st.subheader(f"**{self.institution}**")
+        st.write(f"{self.location} | {self.start_date} - {self.end_date}")
+        st.write(f"**Degree**: {self.degree}")
+        st.write(f"**GPA**: {self.gpa}")
+
 
 class CourseData:
     def __init__(self, code, name, institution, semester_taken, skills):
@@ -30,12 +37,12 @@ class CourseData:
 
 
     def get_course_dataframe(self):
-        return DataFrame({
-            "Course Code": self.code,
-            "Course Name": self.name,
-            "Institution Taken": self.institution,
-            "Semester Taken": self.semester_taken,
-            "Skills": self.skills,
+        return pd.DataFrame({
+            "code":[self.code],
+            "name": [self.name],
+            "institution": [self.institution],
+            "semester": [self.semester_taken],
+            "skills": [self.skills],
         })
 
 
